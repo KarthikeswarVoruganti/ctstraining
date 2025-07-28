@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kingdom Fitness</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🧭 Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="index.html">🏰 Kingdom Fitness</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="join.html">Join Now</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 📞 Header Section -->
+  <header class="bg-info text-white text-center py-5">
+    <h1>Contact Us</h1>
+    <p>We're here to answer your questions and welcome your feedback</p>
+  </header>
+
+  <!-- 📨 Contact Form -->
+  <section class="container my-5">
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" class="form-control" placeholder="your@email.com" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" class="form-control" placeholder="Topic" />
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" class="form-control" placeholder="Type your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-info btn-lg">Send Message</button>
+    </form>
+  </section>
+
+  <!-- 📍 Address & Info -->
+  <section class="text-center bg-light py-4">
+    <p><strong>📍 Address:</strong> 123 Fit Avenue, Serilingampalli, TG</p>
+    <p><strong>📞 Phone:</strong> +91-9876543210</p>
+    <p><strong>📧 Email:</strong> support@kingdomfitness.com</p>
+  </section>
+
+  <!-- 📜 Footer -->
+  <footer class="bg-secondary text-white text-center py-3">
+    <p>&copy; 2025 Kingdom Fitness | Designed by Your Team</p>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

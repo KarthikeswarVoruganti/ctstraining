@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Heading Button -->
+<button onclick="
+  document.getElementById('heading').style.display = 
+    document.getElementById('heading').style.display === 'none' ? 'block' : 'none';
+">Heading</button>
+
+<!-- Paragraph Button -->
+<button onclick="
+  const para = document.getElementById('para');
+  const arrBtn = document.getElementById('arrBtn');
+  if (para.style.display === 'none') {
+    para.style.display = 'block';
+    arrBtn.style.display = 'block';
+  } else {
+    para.style.display = 'none';
+    arrBtn.style.display = 'none';
+    document.getElementById('arr').style.display = 'none'; // hide array too
+  }
+">Paragraph</button>
+
+<!-- Heading -->
+<h1 id="heading" style="display:none;">This is a heading</h1>
+
+<!-- Paragraph -->
+<p id="para" style="display:none;">
+  Alicella gigantea is a giant species of amphipod that lives in the deep sea. Sometimes referred to as the "supergiant amphipod", the largest of these crustaceans reach up to 34 cm (13 in) in length. It is the only species within the genus Alicella...
+</p>
+
+<!-- Array Button -->
+<button id="arrBtn" style="display:none;" onclick="
+  const arr = document.getElementById('arr');
+  arr.style.display = arr.style.display === 'none' ? 'block' : 'none';
+">Array</button>
+
+<!-- Array Content -->
+<p id="arr" style="display:none;">
+  "Alicella gigantea is a giant species of amphipod that lives in the deep sea."<br>
+  "Sometimes referred to as the 'supergiant amphipod', the largest of these crustaceans reach up to 34 cm (13 in) in length."<br>
+  "It is the only species within the genus Alicella."<br>
+  <!-- You can continue these lines or format it as a real array if you’d like -->
+</p>
+
+</body>
+</html>
